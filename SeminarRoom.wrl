@@ -1,0 +1,2153 @@
+#VRML V2.0 utf8
+#floor
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.5 0.5 0.5
+		}
+	}
+	geometry IndexedFaceSet{
+		coord Coordinate{
+			point[8.5 0 -7.5, 8.5 0 5.9, 3.6 0 5.9, 3.6 0 7.5,
+			      -8.5 0 7.5, -8.5 0 -7.5]
+		}
+		coordIndex[
+			0,5,4,3,2,1,-1]
+	}
+}
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 1 1 1
+		}
+	}
+	geometry IndexedFaceSet{
+		coord Coordinate{
+			point[8.5 0 -7.5, 8.5 0 5.9, 3.6 0 5.9, 3.6 0 7.5,
+			      -8.5 0 7.5, -8.5 0 -7.5]
+		}
+		coordIndex[
+			0,1,2,3,4,5,-1]
+	}
+}
+#twentyseven desks
+DEF twentysevendesks Group{
+    children[
+#three desks
+DEF threedesks Group{
+    children[
+#A desk
+DEF desk Group{
+    children[
+	#desktop
+	Transform{
+		translation 0.65 0.595 -0.7
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 1.0 1.0 1.0
+					}
+				}
+				geometry Box{
+					size 1.5 0.01 0.4
+				}
+			}
+		]
+	}
+	#deskside_left
+	Transform{
+		translation -0.09 0.31 -0.8
+		children[
+			DEF deskside Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 1.0 1.0 1.0
+					}
+				}
+				geometry Box{
+					size 0.02 0.58 0.2
+				}
+			}
+		]
+	}
+	#deskside_right
+	Transform{
+		translation 1.39 0.31 -0.8
+		children[USE deskside]
+	}
+	#deskleg_left
+	Transform{
+		translation -0.09 0.01 -0.7
+		children[
+			DEF deskleg Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 1.0 1.0 1.0
+					}
+				}
+				geometry Box{
+					size 0.02 0.02 0.4
+				}
+			}
+		]
+	}
+	#deskleg_right
+	Transform{
+		translation 1.39 0.01 -0.7
+		children[USE deskleg]
+	}
+	#deskback
+	Transform{
+		translation 0.65 0.435 -0.9
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 1.0 1.0 1.0
+					}
+				}
+				geometry Box{
+					size 1.46 0.33 0.01
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	translation  1.5 0 0
+	children[USE desk]
+	}
+Transform{
+	translation -1.5 0 0
+	children[USE desk]
+	}
+    ]
+}
+
+Transform{
+	translation 0 0 -1.2
+	children[USE threedesks]
+	}
+
+Transform{
+	translation 0 0 -2.4
+	children[USE threedesks]
+	}
+
+Transform{
+	translation 0 0 -3.6
+	children[USE threedesks]
+	}
+
+Transform{
+	translation 0 0 -4.8
+	children[USE threedesks]
+	}
+
+Transform{
+	translation 0 0 1.2
+	children[USE threedesks]
+	}
+
+Transform{
+	translation 0 0 2.4
+	children[USE threedesks]
+	}
+
+Transform{
+	translation 0 0 3.6
+	children[USE threedesks]
+	}
+
+Transform{
+	translation 0 0 4.8
+	children[USE threedesks]
+	}
+    ]
+}
+
+Transform{
+	translation 0 0 6.0
+	children[USE desk]
+	}
+
+Transform{
+	translation 0 0 7.2
+	children[USE desk]
+	}
+
+Transform{
+	translation -1.5 0 6.0
+	children[USE desk]
+	}
+
+Transform{
+	translation -1.5 0 7.2
+	children[USE desk]
+	}
+
+Transform{
+	translation -5.5 0 0
+	children[USE twentysevendesks]
+	}
+
+Transform{
+	translation -5.5 0 6
+	children[USE threedesks]
+	}
+
+Transform{
+	translation -5.5 0 7.2
+	children[USE threedesks]
+	}
+
+#pillar 
+DEF pillar Group{
+    children[
+	Transform{
+		translation 3.6 1.51 -2.5
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.9 0.9 0.9
+					}
+				}
+				geometry Cylinder{
+					height 3.02
+					radius 0.35
+				}
+			}
+		]
+	}
+    ]
+}
+
+Transform{
+	translation 0 0 5
+	children[USE pillar]
+	}
+Transform{
+	translation 0 0 -5
+	children[USE pillar]
+	}
+Transform{
+	translation 0 0 10
+	children[USE pillar]
+	}
+Transform{
+	translation -11.6 0 0
+	children[USE pillar]
+	}
+Transform{
+	translation -11.6 0 5
+	children[USE pillar]
+	}
+Transform{
+	translation -11.6 0 -5
+	children[USE pillar]
+	}
+Transform{
+	translation -5.7 0 10
+	children[USE pillar]
+	}
+#fiftyfour chairs
+DEF fiftyfourchairs Group{
+    children[
+#six chairs
+DEF sixchairs Group{
+    children[
+#two chairs
+DEF twochairs Group{
+    children[
+#chair
+DEF chair Group{
+    children[
+#seat of chair
+DEF seat Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0 0.9 0
+		}
+	}
+	geometry IndexedFaceSet{
+		coord Coordinate{
+			  point[0.375 0.35 -0.7, 0.175 0.35 -0.7,
+				0.075 0.35 -0.6, 0.075 0.35 -0.4,
+				0.175 0.35 -0.3, 0.375 0.35 -0.3,
+				0.475 0.35 -0.4, 0.475 0.35 -0.6,
+				0.375 0.3 -0.7, 0.175 0.3 -0.7,
+				0.075 0.3 -0.6, 0.075 0.3 -0.4,
+				0.175 0.3 -0.3, 0.375 0.3 -0.3,
+				0.475 0.3 -0.4, 0.475 0.3 -0.6]
+		}
+		coordIndex[
+			0,1,2,3,4,5,6,7,-1,
+			8,15,14,13,12,11,10,9,-1,
+			0,7,15,8,-1,
+			7,6,14,15,-1,
+			6,5,13,14 -1,
+			5,4,12,13,-1,
+			4,3,11,12,-1,
+			3,2,10,11,-1,
+			2,1,9,10,-1,
+			1,0,8,9]
+	}
+}
+#backrest
+Transform{
+	translation 0 0.25 -0.65
+	scale 1 1 0.7
+	rotation 1 0 0 1.74
+	children[USE seat]
+	}
+
+#post
+Transform{
+	translation 0.275 0.2 -0.5
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.3 0.3 0.3
+				}
+			}
+			geometry Cylinder{
+				height 0.2
+				radius 0.03
+			}
+		}
+	]
+}
+
+#chairleg
+DEF chairleg Group{
+    children[
+	Transform{
+		translation 0.275 0.075 -0.65
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.3 0.3 0.3
+					}
+				}
+				geometry Box{
+					size 0.05 0.05 0.3
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	center 0.275 0.075 -0.5
+	rotation 0 1 0 1.256
+	children[USE chairleg]
+	}
+Transform{
+	center 0.275 0.075 -0.5
+	rotation 0 1 0 2.512
+	children[USE chairleg]
+	}
+Transform{
+	center 0.275 0.075 -0.5
+	rotation 0 1 0 3.768
+	children[USE chairleg]
+	}
+Transform{
+	center 0.275 0.075 -0.5
+	rotation 0 1 0 5.024
+	children[USE chairleg]
+	}
+
+#chairleg_sphere
+DEF chairleg_sphere Group{
+    children[
+	Transform{
+		translation 0.275 0.0255 -0.775
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.3 0.3 0.3
+					}
+				}
+				geometry Sphere{
+					radius 0.0255
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	center 0.275 0.075 -0.5
+	rotation 0 1 0 1.256
+	children[USE chairleg_sphere]
+	}
+Transform{
+	center 0.275 0.075 -0.5
+	rotation 0 1 0 2.512
+	children[USE chairleg_sphere]
+	}
+Transform{
+	center 0.275 0.075 -0.5
+	rotation 0 1 0 3.768
+	children[USE chairleg_sphere]
+	}
+Transform{
+	center 0.275 0.075 -0.5
+	rotation 0 1 0 5.024
+	children[USE chairleg_sphere]
+	}
+    ]
+}
+
+Transform{
+	translation 0.75 0 0
+	children[USE chair]
+	}
+    ]
+}
+
+Transform{
+	translation 1.5 0 0
+	children[USE twochairs]
+	}
+Transform{
+	translation -1.5 0 0
+	children[USE twochairs]
+	}
+    ]
+}
+
+Transform{
+	translation 0 0 1.2
+	children[USE sixchairs]
+	}
+Transform{
+	translation 0 0 2.4
+	children[USE sixchairs]
+	}
+Transform{
+	translation 0 0 3.6
+	children[USE sixchairs]
+	}
+Transform{
+	translation 0 0 4.8
+	children[USE sixchairs]
+	}
+Transform{
+	translation 0 0 -1.2
+	children[USE sixchairs]
+	}
+Transform{
+	translation 0 0 -2.4
+	children[USE sixchairs]
+	}
+Transform{
+	translation 0 0 -3.6
+	children[USE sixchairs]
+	}
+Transform{
+	translation 0 0 -4.8
+	children[USE sixchairs]
+	}
+    ]
+}
+
+Transform{
+	translation -5.5 0 0
+	children[USE fiftyfourchairs]
+	}
+Transform{
+	translation -5.5 0 6.0
+	children[USE sixchairs]
+	}
+Transform{
+	translation -7 0 7.2
+	children[USE twochairs]
+	}
+Transform{
+	translation -4 0 7.2
+	children[USE twochairs]
+	}
+Transform{
+	translation -5.5 0 7.2
+	children[USE chair]
+	}
+
+Transform{
+	translation 0 0 6.0
+	children[USE twochairs]
+	}
+Transform{
+	translation -1.5 0 6.0
+	children[USE twochairs]
+	}
+Transform{
+	translation 0 0 7.2
+	children[USE twochairs]
+	}
+Transform{
+	translation -1.5 0 7.2
+	children[USE twochairs]
+	}
+
+#six 1stpcs
+DEF sixfirstpcs Group{
+    children[
+#two 1stpcs
+DEF twofirstpcs Group{
+    children[
+#1st pc
+DEF firstpc Group{
+    children[
+#1stpc_keyboard
+DEF firstpc_keyboard Group{
+    children[
+	Transform{
+		translation 0.275 0.605 -0.75
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0 0 0
+					}
+				}
+				geometry Box{
+					size 0.4 0.01 0.2
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	center 0.275 0.605 -0.85
+	rotation 1 0 0 -1.74
+	children[USE firstpc_keyboard]
+	}
+    ]
+}
+
+Transform{
+	translation 0.75 0 0
+	children[USE firstpc]
+	}
+    ]
+}
+
+Transform{
+	translation 1.5 0 0
+	children[USE twofirstpcs]
+	}
+Transform{
+	translation -1.5 0 0
+	children[USE twofirstpcs]
+	}
+    ]
+}
+#rightside
+Transform{
+	translation 0 0 1.2
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation 0 0 2.4
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation 0 0 3.6
+	children[USE sixfirstpcs]
+	}
+
+Transform{
+	translation 0 0 -1.2
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation 0 0 -2.4
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation 0 0 -3.6
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation 0 0 -4.8
+	children[USE sixfirstpcs]
+	}
+#leftside
+Transform{
+	translation -5.5 0 0
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation -5.5 0 1.2
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation -5.5 0 2.4
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation -5.5 0 3.6
+	children[USE sixfirstpcs]
+	}
+
+Transform{
+	translation -5.5 0 -2.4
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation -5.5 0 -3.6
+	children[USE sixfirstpcs]
+	}
+Transform{
+	translation -5.5 0 -4.8
+	children[USE sixfirstpcs]
+	}
+
+Transform{
+	translation -7 0 4.8
+	children[USE twofirstpcs]
+	}
+Transform{
+	translation -4 0 4.8
+	children[USE twofirstpcs]
+	}
+Transform{
+	translation -5.5 0 4.8
+	children[USE firstpc]
+	}
+#My pc row 
+Transform{
+	translation -7 0 -1.2
+	children[USE twofirstpcs]
+	}
+Transform{
+	translation -5.5 0 -1.2
+	children[USE twofirstpcs]
+	}
+Transform{
+	translation -3.25 0 -1.2
+	children[USE firstpc]
+	}
+
+#My pc animation
+DEF Mypc Group{
+    children[
+DEF Mypc_keyboard Group{
+    children[
+	Transform{
+		translation -3.725 0.605 -1.95
+		children[
+			Shape{
+				appearance Appearance{
+					material DEF MypcFacade Material{
+						diffuseColor 0 0 0
+					}
+				}
+				geometry Box{
+					size 0.4 0.01 0.2
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	center -3.725 0.605 -2.05
+	rotation 1 0 0 -1.74
+	children[USE Mypc_keyboard]
+	}
+    ]
+}
+
+
+DEF MypcTimer TimeSensor{
+	cycleInterval 4.0
+	loop TRUE
+	startTime 0.0
+	stopTime -1.0
+}
+
+DEF MypcColor ColorInterpolator{
+	key[0.143,0.286,0.429,0.571,0.714,0.857,1]
+	keyValue[1 0 0, 0.5 0.5 0, 0 1 0, 0 0.5 0.5, 0 0 1, 0.5 0 0.5, 1 0 0]
+}
+
+ROUTE MypcTimer.fraction_changed TO MypcColor.set_fraction
+ROUTE MypcColor.value_changed TO MypcFacade.set_diffuseColor
+
+#six 2ndpcs
+DEF sixsecondpcs Group{
+    children[
+#two 2ndpcs
+DEF twosecondpcs Group{
+    children[
+#2nd pc
+DEF secondpc Group{
+    children[
+	Transform{
+		translation 0.275 0.61 4.05
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.8 0.8 0.8
+					}
+				}
+				geometry Box{
+					size 0.3 0.02 0.2
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	translation 0.75 0 0
+	children[USE secondpc]
+	}
+    ]
+}
+Transform{
+	translation 1.5 0 0
+	children[USE twosecondpcs]
+	}
+Transform{
+	translation -1.5 0 0
+	children[USE twosecondpcs]
+	}
+    ]
+}
+
+Transform{
+	translation -5.5 0 1.2
+	children[USE sixsecondpcs]
+	}
+
+Transform{
+	translation 0 0 1.2
+	children[USE twosecondpcs]
+	}
+Transform{
+	translation -0.75 0 1.2
+	children[USE secondpc]
+	}
+
+Transform{
+	translation 0 0 2.4
+	children[USE twosecondpcs]
+	}
+Transform{
+	translation -0.75 0 2.4
+	children[USE secondpc]
+	}
+
+#wall
+#wall front
+Transform{
+	translation 0 1.5 -7.51
+	children[
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.9 0.9 0.9
+		}
+	}
+	geometry Box{
+		size 17.04 3 0.02
+	}
+}
+	]
+}
+
+#wall back
+#wall back_leftside
+Transform{
+	translation -2.46 1.5 7.51
+	children[
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.9 0.9 0.9
+		}
+	}
+	geometry Box{
+		size 12.12 3 0.02
+	}
+}
+	]
+}
+#wall back_connection
+Transform{
+	translation 3.61 1.3 6.7
+	children[
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.9 0.9 0.9
+		}
+	}
+	geometry Box{
+		size 0.02 2.6 1.6
+	}
+}
+	]
+}
+#wall back_rightside
+Transform{
+	translation 6.06 1.3 5.91
+	children[
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.9 0.9 0.9
+		}
+	}
+	geometry Box{
+		size 4.92 2.6 0.02
+	}
+}
+	]
+}
+#wall back_salient
+Transform{
+	translation -1.75 2.8 7.25
+	children[
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.9 0.9 0.9
+		}
+	}
+	geometry Box{
+		size 10.7 0.4 0.5
+	}
+}
+	]
+}
+Transform{
+	translation -7.81 1.5 7.25
+	children[
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.9 0.9 0.9
+		}
+	}
+	geometry Box{
+		size 1.42 3 0.5
+	}
+}
+	]
+}
+
+#wall left
+#wall left_under
+Transform{
+	translation -8.51 0.25 -0.25
+	children[
+Shape{
+	appearance Appearance{
+		material Material{
+			diffuseColor 0.9 0.9 0.9
+		}
+	}
+	geometry Box{
+		size 0.02 0.5 14.5
+	}
+}
+	]
+}
+
+#wall left_window
+DEF window Group{
+    children[
+	Transform{
+		translation -8.51 1.75 -6.125
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.9 0.9 1.0
+						transparency 0.8
+					}
+				}
+				geometry Box{
+					size 0.02 2.5 1.75
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	translation 0 0 2.45
+	children[USE window]
+}
+Transform{
+	translation 0 0 4.9
+	children[USE window]
+}
+Transform{
+	translation 0 0 7.35
+	children[USE window]
+}
+Transform{
+	translation 0 0 9.8
+	children[USE window]
+}
+Transform{
+	translation 0 0 12.25
+	children[USE window]
+}
+
+#wall left_interval
+Transform{
+	translation -8.51 1.75 -7.25
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.9 0.9 0.9
+				}
+			}
+			geometry Box{
+				size 0.02 2.5 0.5
+			}
+		}
+	]
+}
+
+DEF wallleft_interval Group{
+    children[
+	Transform{
+		translation -8.51 1.75 -4.9
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.9 0.9 0.9
+					}
+				}
+				geometry Box{
+					size 0.02 2.5 0.7
+				}
+			}
+		]
+	}
+    ]
+}
+
+Transform{
+	translation 0 0 2.45
+	children[USE wallleft_interval]
+}
+Transform{
+	translation 0 0 4.9
+	children[USE wallleft_interval]
+}
+Transform{
+	translation 0 0 7.35
+	children[USE wallleft_interval]
+}
+Transform{
+	translation 0 0 9.8
+	children[USE wallleft_interval]
+}
+
+#wallright
+#wallright_interval
+DEF wallright_interval Group{
+    children[
+	Transform{
+		translation 8.51 1.3  -7.3
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.9 0.9 0.9
+					}
+				}
+				geometry Box{
+					size 0.02 2.6 0.4
+				}
+			}
+		]
+	}
+    ]
+}
+
+Transform{
+	translation 0 0 1.2
+	children[USE wallright_interval]
+}
+Transform{
+	translation 0 0 11.2
+	children[USE wallright_interval]
+}
+
+Transform{
+	translation 8.51 1.3 5.8
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.9 0.9 0.9
+				}
+			}
+			geometry Box{
+				size 0.02 2.6 0.2
+			}
+		}
+	]
+}
+
+#wallright_under
+DEF wallright_under Group{
+    children[
+	Transform{
+		translation 8.51 0.1 -1.1
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.9 0.9 0.9
+					}
+				}
+				geometry Box{
+					size 0.02 0.2 9.6
+				}
+			}
+		]
+	}
+    ]
+}
+#wallright_upper
+Transform{
+	translation 0 2.4 0
+	children[USE wallright_under]
+}
+#wallright_upperspace_above doors
+DEF wallright_upperspace Group{
+    children[
+	Transform{
+		translation 8.51 2.5 -6.7
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.9 0.9 0.9
+					}
+				}
+				geometry Box{
+					size 0.02 0.2 0.8
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	translation 0 0 11.2
+	children[USE wallright_upperspace]
+}
+Transform{
+	translation 0 0 12
+	children[USE wallright_upperspace]
+}
+
+#wallright_above doors
+DEF wallright_abovedoor Group{
+    children[
+	Transform{
+		translation 8.51 2.25 -6.7
+		children[
+			Shape{
+			appearance Appearance{
+					material Material{
+						diffuseColor 1 1 1
+					}
+				}
+				geometry Box{
+					size 0.02 0.3 0.8
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	translation 0 0 11.2
+	children[USE wallright_abovedoor]
+}
+Transform{
+	translation 0 0 12
+	children[USE wallright_abovedoor]
+}
+
+#doors
+DEF door Group{
+    children[
+	#door_interval left
+	DEF door_interval Group{
+	    children[
+		Transform{
+			translation 8.51 1.05 -6.9225
+			children[
+				Shape{
+					appearance Appearance{
+						material Material{
+							diffuseColor 1 1 1
+						}
+					}
+					geometry Box{
+						size 0.02 2.09 0.345
+					}
+				}
+			]
+		}
+	    ]
+	}
+	#right
+	Transform{
+		translation 0 0 0.445
+		children[USE door_interval]
+	}
+
+	#door_abovewindow upper
+	DEF door_abovewindow Group{
+	    children[
+		Transform{
+			translation 8.51 2.0225 -6.7
+			children[
+				Shape{
+					appearance Appearance{
+						material Material{
+							diffuseColor 1 1 1
+						}
+					}
+					geometry Box{
+						size 0.02 0.145 0.1
+					}
+				}
+			]
+		}
+	    ]
+	}
+	#under
+	Transform{
+		translation 0 -1.945 0
+		children[USE door_abovewindow]
+	}
+
+	#door_window
+	Transform{
+		translation 8.51 1.05 -6.7
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.9 0.9 1.0
+							transparency 0.8
+					}
+				}
+				geometry Box{
+					size 0.02 1.8 0.1
+				}
+			}
+		]
+	}
+    ]
+}
+
+Transform{
+	translation 0 0 11.2
+	children[USE door]
+}
+
+#wallright_window
+Transform{
+	translation 8.51 1.3 -1.1
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.9 0.9 1.0
+						transparency 0.8
+				}
+			}
+			geometry Box{
+				size 0.02 2.2 9.6
+			}
+		}
+	]
+}
+
+#rightside
+#table
+DEF table Group{
+    children[
+#table_top
+Transform{
+	translation 6 0.76 -5.4
+	scale 1.8 1 1
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 1 1 1
+				}
+			}
+			geometry Cylinder{
+				height 0.02
+				radius 0.5
+			}
+		}
+	]
+}
+#table_leg
+DEF table_leg Group{
+    children[
+	Transform{
+		translation 6.6 0.4 -5.7
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.6 0.6 0.6
+					}
+				}
+				geometry Cylinder{
+					height 0.7
+					radius 0.02
+				}
+			}
+		]
+	}
+#table_leg sphere
+	Transform{
+		translation 6.6 0.0255 -5.7
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0 0 0
+					}
+				}
+				geometry Sphere{
+					radius 0.0255
+				}
+			}
+		]
+	}
+    ]
+}
+
+Transform{
+	translation 0 0 0.6
+	children[USE table_leg]
+}
+Transform{
+	translation -1.2 0 0
+	children[USE table_leg]
+}
+Transform{
+	translation -1.2 0 0.6
+	children[USE table_leg]
+}
+    ]
+}
+
+Transform{
+	translation 0 0 2.2
+	children[USE table]
+}
+Transform{
+	translation 0 0 4.4
+	children[USE table]
+}
+Transform{
+	translation 0 0 6.6
+	children[USE table]
+}
+Transform{
+	translation 0 0 8.8
+	children[USE table]
+}
+
+#another chairs
+DEF fiveanotherchairs Group{
+    children[
+#another chair
+DEF anotherchair Group{
+    children[
+#anotherchair_seat
+Transform{
+	translation 6.9 0.415 -5.4
+	scale 1 1 1.25
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 0
+				}
+			}
+			geometry Cylinder{
+				height 0.03
+				radius 0.2
+			}
+		}
+	]
+}
+
+#anotherchair_post
+Transform{
+	translation 6.9 0.25 -5.4
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.6 0.6 0.6
+				}
+			}
+			geometry Cylinder{
+				height 0.3
+				radius 0.03
+			}
+		}
+	]
+}
+Transform{
+	translation 6.9 0.075 -5.4
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 0
+				}
+			}
+			geometry Cylinder{
+				height 0.06
+				radius 0.04
+			}
+		}
+	]
+}
+
+#anotherchair_leg
+DEF anotherchair_leg Group{
+    children[
+	Transform{
+		translation 6.75 0.075 -5.4
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.6 0.6 0.6
+					}
+				}
+				geometry Box{
+					size 0.3 0.05 0.02
+				}
+			}
+		]
+	}
+    ]
+}
+Transform{
+	center 6.9 0.075 -5.4
+	rotation 0 1 0 1.256
+	children[USE anotherchair_leg]
+	}
+Transform{
+	center 6.9 0.075 -5.4
+	rotation 0 1 0 2.512
+	children[USE anotherchair_leg]
+	}
+Transform{
+	center 6.9 0.075 -5.4
+	rotation 0 1 0 3.768
+	children[USE anotherchair_leg]
+	}
+Transform{
+	center 6.9 0.075 -5.4
+	rotation 0 1 0 5.024
+	children[USE anotherchair_leg]
+	}
+
+#anotherchair_leg_sphere
+DEF anotherchair_leg_sphere Group{
+    children[
+	Transform{
+		translation 6.625 0.025 -5.4
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0 0 0
+					}
+				}
+				geometry Sphere{
+					radius 0.0255
+				}
+			}
+		]
+	}
+    ]
+}
+		
+Transform{
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 1.256
+	children[USE anotherchair_leg_sphere]
+	}
+Transform{
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 2.512
+	children[USE anotherchair_leg_sphere]
+	}
+Transform{
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 3.768
+	children[USE anotherchair_leg_sphere]
+	}
+Transform{
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 5.024
+	children[USE anotherchair_leg_sphere]
+	}
+
+#anotherchair_backrest
+Transform{
+	center 7.1 0.58 -5.4
+	rotation 1 0 0 1.57
+	children[
+		Transform{
+			translation 7.1 0.58 -5.4
+			children[
+				Shape{
+					appearance Appearance{
+						material Material{
+							diffuseColor 0.6 0.6 0.6						}
+					}
+					geometry Cylinder{
+						height 0.4
+						radius 0.01
+					}
+				}
+			]
+		}
+	]
+}
+DEF anotherchair_backrest_side Group{
+    children[
+Transform{
+	translation 7.1 0.48 -5.21
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.6 0.6 0.6				}
+			}
+			geometry Cylinder{
+				height 0.2
+				radius 0.01
+			}
+		}
+	]
+}
+Transform{
+	center 7.05 0.39 -5.21
+	rotation 0 0 1 1.57
+	children[
+		Transform{
+			translation 7.05 0.39 -5.21
+			children[
+				Shape{
+					appearance Appearance{
+						material Material{
+							diffuseColor 0.6 0.6 0.6						}
+					}
+					geometry Cylinder{
+						height 0.1
+						radius 0.01
+					}
+				}
+			]
+		}
+	]
+}
+    ]
+}
+
+Transform{
+	translation 0 0 -0.38
+	children[USE anotherchair_backrest_side]
+}
+
+    ]
+}
+
+Transform{
+	translation -0.6 0 0.4
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 1.256
+	children[USE anotherchair]
+}
+Transform{
+	translation -0.8 0 -0.5
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 1.256
+	children[USE anotherchair]
+}
+Transform{
+	translation -1.1 0 0.4
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 -1.57
+	children[USE anotherchair]
+}
+Transform{
+	translation -1.7 0 0
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 2.512
+	children[USE anotherchair]
+}
+
+    ]
+}
+
+Transform{
+	translation 0 0 2.2
+	children[USE fiveanotherchairs]
+}
+Transform{
+	translation 0 0 4.4
+	children[USE fiveanotherchairs]
+}
+Transform{
+	translation 0 0 6.6
+	children[USE fiveanotherchairs]
+}
+Transform{
+	translation 0 0 8.8
+	children[USE fiveanotherchairs]
+}
+
+Transform{
+	translation -1.5 0 -0.6
+	center 6.9 0.025 -5.4
+	rotation 0 1 0 -3.768
+	children[USE anotherchair]
+}
+
+#light
+#light_leftside
+DEF fourlights Group{
+    children[
+DEF light Group{
+    children[
+	Transform{
+		translation -6.9 2.99 -6.8
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						emissiveColor 1 1 0				}
+				}
+				geometry Box{
+					size 1.2 0.02 0.2
+				}
+			}
+		]
+	}
+    ]
+}
+
+Transform{
+	translation 2.8 0 0
+	children[USE light]
+}
+Transform{
+	translation 5.6 0 0
+	children[USE light]
+}
+Transform{
+	translation 8.4 0 0
+	children[USE light]
+}
+    ]
+}
+
+Transform{
+	translation 0 0 1.2
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 2.4
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 3.6
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 4.8
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 6.0
+	children[USE fourlights]
+}
+
+Transform{
+	translation 0 0 7.2
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 8.4
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 9.6
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 10.8
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 12
+	children[USE fourlights]
+}
+Transform{
+	translation 0 0 13.2
+	children[USE fourlights]
+}
+
+#light_rightside
+DEF twolights Group{
+    children[
+Transform{
+	translation 11.8 0 0
+	children[USE light]
+}
+Transform{
+	translation 14.2 0 0
+	children[USE light]
+}
+    ]
+}
+
+Transform{
+	translation 0 0 1.2
+	children[USE twolights]
+}
+Transform{
+	translation 0 0 2.4
+	children[USE twolights]
+}
+
+Transform{
+	translation 0 0 3.6
+	children[USE twolights]
+}
+Transform{
+	translation 0 0 4.8
+	children[USE twolights]
+}
+Transform{
+	translation 0 0 6.0
+	children[USE twolights]
+}
+Transform{
+	translation 0 0 7.2
+	children[USE twolights]
+}
+
+Transform{
+	translation 0 0 8.4
+	children[USE twolights]
+}
+Transform{
+	translation 0 0 9.6
+	children[USE twolights]
+}
+Transform{
+	translation 0 0 10.8
+	children[USE twolights]
+}
+
+#display
+DEF display Group{
+    children[
+Transform{
+	translation -5.5 2.985 -5.85
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 0
+				}
+			}
+			geometry Cylinder{
+				height 0.03
+				radius 0.05
+			}
+		}
+	]
+}
+Transform{
+	translation -5.5 2.6 -5.85
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 0
+				}
+			}
+			geometry Cylinder{
+				height 0.8
+				radius 0.02
+			}
+		}
+	]
+}
+
+Transform{
+	center -5.5 2.3 -5.85
+	rotation 1 0 0 0.35
+    	children[
+		Transform{
+			translation -5.5 2.3 -5.85
+			children[
+				Shape{
+					appearance Appearance{
+						material Material{
+							diffuseColor 0 0 0
+						}
+					}
+					geometry Box{
+						size 0.1 0.2 0.1
+					}
+				}
+			]
+		}
+		Transform{
+			translation -5.5 2.25 -5.79
+			children[
+				Shape{
+					appearance Appearance{
+						material Material{
+							diffuseColor 0 0 0
+						}
+					}
+					geometry Box{
+						size 0.6 0.3 0.02
+					}
+				}
+			]
+		}
+		Transform{
+			translation -5.5 2.3 -5.76
+			children[
+				Shape{
+					appearance Appearance{
+						material Material{
+							diffuseColor 0 0 0
+						}
+					}
+					geometry Box{
+						size 1.2 0.8 0.04
+					}
+				}
+			]
+		}
+
+	]
+}
+
+#display_screen
+Transform{
+	center -5.5 2.3 -5.85
+	rotation 1 0 0 0.35
+    	children[
+		Transform{
+			translation -5.5 2.3 -5.735
+			children[
+				Shape{
+					appearance Appearance{
+						texture ImageTexture{
+							url "texture1.jpg"
+						}
+					}
+					geometry Box{
+						size 1.16 0.76 0.01
+					}
+				}
+			]
+		}
+	]
+}
+
+    ]
+}
+
+Transform{
+	translation 0 0 3.6
+	children[USE display]
+}
+Transform{
+	translation 0 0 7.2
+	children[USE display]
+}
+Transform{
+	translation 5.6 0 0
+	children[USE display]
+}
+Transform{
+	translation 5.6 0 3.6
+	children[USE display]
+}
+Transform{
+	translation 5.6 0 7.2
+	children[USE display]
+}
+
+#frontscreen
+Transform{
+	translation -2.7 2.2 -7.19
+	children[
+		Shape{
+			appearance Appearance{
+				texture ImageTexture{
+					url "texture1.jpg"
+				}
+			}
+			geometry Box{
+				size 2.4 1.6 0.02
+			}
+		}
+	]
+}
+
+#animation
+#door animation
+DEF doorAnimation Transform{
+	center 8.51 1.3 -6.3
+	translation 0 0 12
+	children[USE door]
+}
+
+DEF doorTimer TimeSensor{
+	cycleInterval 11.1
+	loop TRUE
+	startTime 0.0
+	stopTime -1.0
+}
+
+DEF doorDirection OrientationInterpolator{
+	key[0.0, 0.02, 0.98, 1.0]
+	keyValue[0 1 0 0, 0 1 0 1.57, 0 1 0 1.57, 0 1 0 0]
+}
+
+ROUTE doorTimer.fraction_changed TO doorDirection.set_fraction
+ROUTE doorDirection.value_changed TO doorAnimation.rotation
+
+
+#ufo
+DEF ufoAnimation Transform{
+    children[
+	Transform{
+		translation 10.5 1.5 5.3
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0.5 0.5 0.5
+					}
+				}
+				geometry Sphere{
+					radius 0.15
+				}
+			}
+		]
+	}
+	Transform{
+		translation 10.5 1.45 5.3
+		scale 1 0.3 1
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 1 1 0
+					}
+				}
+				geometry Sphere{
+					radius 0.25
+				}
+			}
+		]
+	}
+    ]
+}
+
+DEF ufoTimer TimeSensor{
+	cycleInterval 11.1
+	loop TRUE
+	startTime 0.0
+	stopTime -1.0
+}
+
+DEF ufoPosition PositionInterpolator{
+	key[0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55,
+		0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0]
+	keyValue[0 0 0, -2 0 0. -5 0 0, -8 0 0, -8.5 0 -1.5, -8 0 -3,
+		-6 -0.25 -5, -4 -0.5 -6, -5.5 -0.4 -8, -7 -0.2 -9.5,
+		-11 0 -10, -14 0 -9, -15 -0.5 -7, -15 0 -6, -14.5 0.9 -4, 
+		-12 0.6 -2.5, -10 0.3 0.5, -8 0 0, -5 0 0, -2 0 0, 0 0 0]
+}
+
+ROUTE ufoTimer.fraction_changed TO ufoPosition.set_fraction
+ROUTE ufoPosition.value_changed TO ufoAnimation.set_translation
+
+#ceiling
+#leftside
+Transform{
+	translation -2.51 3.01 0
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.9 0.9 0.9
+				}
+			}
+			geometry Box{
+				size 12.02 0.02 15.04
+			}
+		}
+	]
+}
+#rightside
+Transform{
+	translation 5.81 2.81 -0.8
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.9 0.9 0.9
+				}
+			}
+			geometry Box{
+				size 5.42 0.42 13.44
+			}
+		}
+	]
+}
+Transform{
+	translation 3.36 2.81 6.72
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.9 0.9 0.9
+				}
+			}
+			geometry Box{
+				size 0.52 0.42 1.6
+			}
+		}
+	]
+}
+
+#teacher's desk
+#desktop
+Transform{
+	translation 0.6 0.495 -6.5
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.8 0.8 0.6
+				}
+			}
+			geometry Box{
+				size 1.0 0.01 0.6
+			}
+		}
+	]
+}
+
+#deskfront
+Transform{
+	translation 0.6 0.245 -6.21
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.8 0.8 0.6
+				}
+			}
+			geometry Box{
+				size 0.96 0.49 0.02
+			}
+		}
+	]
+}
+
+#deskside
+DEF teacher_deskside Group{
+    children[
+Transform{
+	translation 0.11 0.26 -6.35
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.8 0.8 0.6
+				}
+			}
+			geometry Box{
+				size 0.02 0.48 0.3
+			}
+		}
+	]
+}
+
+Transform{
+	translation 0.11 0.01 -6.5
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.8 0.8 0.6
+				}
+			}
+			geometry Box{
+				size 0.02 0.02 0.6
+			}
+		}
+	]
+}
+
+    ]
+}
+
+Transform{
+	translation 0.98 0 0
+	children[USE teacher_deskside]
+}
+
+Transform{
+	translation -0.4 0.35 -6.5
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.7 0.7 0.7
+				}
+			}
+			geometry Box{
+				size 1.0 0.7 0.6
+			}
+		}
+	]
+}
+
+Transform{
+	center -0.225 0.705 -6.45
+	rotation 0 1 0 3.14
+    children[
+	Transform{
+		translation -0.5 0.1 -5.6
+		children[USE firstpc]
+	}
+    ]
+}
+
+#teacher's pc
+DEF teacher_pc Group{
+    children[
+	#screen
+	Transform{
+		translation 0.35 0.66 -6.28
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0 0 0
+					}
+				}
+				geometry Box{
+					size 0.4 0.2 0.01
+				}
+			}
+		]
+	}
+	#post
+	Transform{
+		translation 0.35 0.56 -6.25
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0 0 0
+					}
+				}
+				geometry Box{
+					size 0.08 0.1 0.05
+				}
+			}
+		]
+	}
+	Transform{
+		translation 0.35 0.505 -6.25
+		children[
+			Shape{
+				appearance Appearance{
+					material Material{
+						diffuseColor 0 0 0
+					}
+				}
+				geometry Box{
+					size 0.2 0.01 0.1
+				}
+			}
+		]
+	}
+    ]
+}
+
+#kerboard
+DEF teacher_kerboard Transform{
+	translation 0.33 0.51 -6.55
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 0
+				}
+			}
+			geometry Box{
+				size 0.46 0.02 0.2
+			}
+		}
+	]
+}
+
+Transform{
+	translation 0.5 0 0
+	children[USE teacher_pc]
+}
+
+Transform{
+	translation 0.54 0 0
+	children[USE teacher_kerboard]
+}
